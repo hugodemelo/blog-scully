@@ -9,5 +9,11 @@ export const config: ScullyConfig = {
   spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
   routes: {
+    '/posts/:id': {
+      type: 'contentFolder',
+      id: {
+        folder: "./mdfiles"
+      }
+    },
   }
 };
